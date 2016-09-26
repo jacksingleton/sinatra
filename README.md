@@ -1384,7 +1384,7 @@ secret will change with every start of your application, you might want to
 set the secret yourself, so all your application instances share it:
 
 ```ruby
-set :session_secret, 'super secret'
+set :session_secret, ENV["SESSION_SECRET"]
 ```
 
 If you want to configure it further, you may also store a hash with options in
